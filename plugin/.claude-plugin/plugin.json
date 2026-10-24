@@ -1,0 +1,7 @@
+{
+  "name": "gtm-brain",
+  "version": "0.1.0",
+  "description": "Outbound research to sequence pipeline with human approval. Skills, slash commands, MCP server and an approval hook.",
+  "author": {"name": "Enes Eren"},
+  "license": "MIT"
+}

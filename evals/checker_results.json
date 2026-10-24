@@ -1,0 +1,10 @@
+{
+  "model": "claude-haiku-5-5",
+  "cases": 24,
+  "accuracy": 1.0,
+  "false_pass": 0,
+  "false_fail": 0,
+  "false_pass_cases": [],
+  "false_fail_cases": [],
+  "prompt_note": "first checker prompt, superseded by the tightened CHECK_SYS in gtm_brain/lines.py"
+}

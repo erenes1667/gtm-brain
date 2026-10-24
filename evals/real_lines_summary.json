@@ -1,0 +1,8 @@
+{
+  "lines": 30,
+  "faithful": 24,
+  "adds_words": 6,
+  "checker_passed_all": true,
+  "false_passes": 6,
+  "recall_on_adds_words": "0 of 6"
+}

@@ -1,0 +1,31 @@
+{
+  "accounts": 19,
+  "fetched_ok": 15,
+  "fetch_errors": {
+    "bonobos.com": "http_403",
+    "vejaclothing.com": "fetch_error:ConnectError",
+    "yeti.com": "http_403",
+    "solodrinks.com": "fetch_error:ConnectError"
+  },
+  "tiers": {
+    "A": 7,
+    "B": 6,
+    "C": 6
+  },
+  "lines_attempted": 13,
+  "first_try_pass": 13,
+  "first_try_pass_rate": 1.0,
+  "final_pass": 13,
+  "dropped": 0,
+  "llm_calls": 56,
+  "cost_usd_total": 0.3318,
+  "cost_usd_by_model": {
+    "claude-haiku-5-5": 0.112,
+    "claude-sonnet-5-5": 0.2198
+  },
+  "cost_usd_per_account": 0.0175,
+  "cost_usd_per_approved_line": 0.0255,
+  "avg_seconds_per_account": 6.21,
+  "wall_seconds": 30.9,
+  "workers": 4
+}

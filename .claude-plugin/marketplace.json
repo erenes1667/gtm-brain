@@ -1,0 +1,6 @@
+{
+  "name": "gtm-brain-local",
+  "owner": {"name": "Enes Eren"},
+  "metadata": {"description": "Local marketplace for the gtm-brain Claude Code plugin."},
+  "plugins": [{"name": "gtm-brain", "source": "./plugin", "description": "Outbound research to sequence pipeline with human approval."}]
+}

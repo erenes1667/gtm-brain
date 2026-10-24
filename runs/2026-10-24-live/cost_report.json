@@ -1,0 +1,29 @@
+{
+  "by_stage_model": {
+    "profile|claude-haiku-5-5": {
+      "calls": 19,
+      "input_tokens": 78216,
+      "output_tokens": 3156,
+      "usd": 0.093996
+    },
+    "score|claude-haiku-5-5": {
+      "calls": 19,
+      "input_tokens": 7204,
+      "output_tokens": 3556,
+      "usd": 0.024984
+    },
+    "line|claude-sonnet-5-5": {
+      "calls": 19,
+      "input_tokens": 86039,
+      "output_tokens": 1815,
+      "usd": 0.285342
+    },
+    "check|claude-haiku-5-5": {
+      "calls": 19,
+      "input_tokens": 4909,
+      "output_tokens": 438,
+      "usd": 0.007099
+    }
+  },
+  "total_usd": 0.4114
+}

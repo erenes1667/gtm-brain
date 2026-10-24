@@ -1,0 +1,19 @@
+domain,line,evidence,source,status,attempts,first_try_pass,problems
+allbirds.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text
+brooklinen.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text
+outdoorvoices.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text
+ritual.com,Ritual says it has spent a decade building traceable supply chains and clinical proof.,Ritual has spent a decade building traceable supply chains and clinical proof,second,pass,2,False,
+nativecos.com,"Native says it makes clean products with no aluminum, dyes, sulfates, silicones, phthalates or petrolatum.","We make clean products with no aluminum, dyes, sulfates, silicones, phthalates, petrolatum, and more.",second,pass,2,False,
+harrys.com,"Harry's says Jeff and Andy started it so men could get a great shave without overpaying, and it has since grown into a full grooming lineup.","Jeff and Andy thought men deserved a great shave without overpaying. Over a decade later, it’s a whole grooming lineup.",home,pass,1,True,
+glossier.com,Glossier started as Into The Gloss before it launched Glossier in 2014.,"Before we launched Glossier in 2014, we started as Into The Gloss",second,pass,2,False,
+mvmt.com,MVMT's homepage says the company has been bringing the unexpected to timekeeping since 2013.,Bringing the unexpected to timekeeping since 2013,home,pass,2,False,
+parachutehome.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text
+buffy.co,"Your homepage says you make sheets, duvet covers, comforters, pillows and blankets, all from one house of botanic textiles.","We make sheets, duvet covers, comforters, pillows and blankets.",home,dropped,2,False,"claims not in evidence: ['""Your homepage"" (the snippet does not say where the statement appears)', '""all from one house of botanic textiles"" (the snippet does not mention a house or botanic textiles)']"
+ruggable.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text
+grovemade.com,Grovemade has been focused on human centric product innovation and home workspace design since 2009.,"Since 2009, we've been obsessed with the process of human centric product innovation, leading the wave of home workspace design.",home,pass,2,False,
+peakdesign.com,"Peak Design says all of its bags are Fair Trade certified, including those made at its new Philippines factory, the first Fair Trade factory in that country.",All of our bags are Fair Trade certified. Learn how we inspired our new Philippines factory to be the first Fair Trade factory in the country.,home,pass,1,True,
+ridge.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text
+chubbies.com,Chubbies describes its mission as bringing customers back to the moment and delivering a Friday at 5pm feeling every day of the week.,we exist to bring our community back to the moment and deliver that Friday at 5pm feeling every day of the week,second,pass,1,True,
+taylorstitch.com,"Taylor Stitch says it has always considered itself a shirting company at its core, and The Jack is its signature button down.",We’ve always considered ourselves a shirting company at our very core.,second,dropped,2,False,"claims not in evidence: [""The Jack is Taylor Stitch's signature button down""]"
+vuoriclothing.com,"Vuori makes premium performance apparel inspired by the active Coastal California lifestyle, blending fitness, surf, sport, and art.","Vuori makes premium performance apparel inspired by the active Coastal California lifestyle; an integration of fitness, surf, sport, and art.",second,pass,1,True,
+jennikayne.com,,,,dropped,2,False,writer returned no parseable line; evidence is not a verbatim quote from the page text

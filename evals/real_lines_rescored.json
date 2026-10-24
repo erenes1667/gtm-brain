@@ -1,0 +1,237 @@
+{
+  "prompt": "CHECK_SYS in gtm_brain/lines.py (tightened 2026-10-24)",
+  "real_lines": 30,
+  "padded_caught": "5 of 6",
+  "faithful_wrongly_failed": "2 of 24",
+  "synthetic_cases": 24,
+  "synthetic_false_pass": 0,
+  "synthetic_false_fail": 1,
+  "rows": [
+    {
+      "domain": "allbirds.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "brooklinen.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "selling",
+        "straight to customers"
+      ]
+    },
+    {
+      "domain": "outdoorvoices.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "ritual.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "for its supplements"
+      ]
+    },
+    {
+      "domain": "nativecos.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "harrys.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "its founders"
+      ]
+    },
+    {
+      "domain": "glossier.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "because it believes healthy skin is the best foundation for makeup \u2014 the added phrase 'for makeup' is not in the snippet"
+      ]
+    },
+    {
+      "domain": "mvmt.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "parachutehome.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "buffy.co",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "grovemade.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "peakdesign.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "ridge.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "the old stuff-everything-in wallet"
+      ]
+    },
+    {
+      "domain": "chubbies.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "taylorstitch.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "vuoriclothing.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "jennikayne.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "brooklynbedding.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "tuftandneedle.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "casper.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "thursdayboots.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "the tradeoffs between clunky work boots and delicate fashion boots"
+      ]
+    },
+    {
+      "domain": "cotopaxi.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "kotn.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "tentree.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "pact.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "girlfriend.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "activewear",
+        "fabrics"
+      ]
+    },
+    {
+      "domain": "brumate.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "ugmonk.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "pelacase.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "nomadgoods.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    }
+  ]
+}

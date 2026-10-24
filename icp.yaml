@@ -1,0 +1,12 @@
+# ICP for the demo. Synthetic offer: lifecycle email and SMS audits for DTC stores.
+name: mid-size DTC e-commerce
+offer: lifecycle email and SMS flow audits for DTC stores
+rules:                      # points are added when the rule matches; rule total is capped at 60
+  - {id: shopify_store,   field: platform,    op: eq,       value: shopify, points: 20}
+  - {id: consumer_goods,  field: category,    op: contains_any, value: [apparel, clothing, home, beauty, skincare, wellness, footwear, accessories, outdoor, food, pet, jewelry, fitness], points: 15}
+  - {id: price_mid_up,    field: price_band,  op: in,        value: [mid, premium], points: 15}
+  - {id: email_stack,     field: signals,     op: contains_any, value: [klaviyo, attentive], points: 10}
+rule_cap: 60
+llm_max: 40                 # LLM judgment adds 0 to 40
+tiers: {A: 70, B: 50}       # below B is C
+write_lines_for: [A, B]

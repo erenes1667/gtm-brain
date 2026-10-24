@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "gtm-brain": {
+      "command": "uv",
+      "args": ["run", "--directory", "${CLAUDE_PLUGIN_ROOT}/..", "python", "-m", "gtm_brain.server"],
+      "env": {"GTM_OUT": "runs/latest", "GTM_ENV_FILE": ".env"}
+    }
+  }
+}

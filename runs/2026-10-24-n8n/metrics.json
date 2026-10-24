@@ -1,0 +1,26 @@
+{
+  "accounts": 2,
+  "fetched_ok": 2,
+  "fetch_errors": {},
+  "tiers": {
+    "A": 2,
+    "B": 0,
+    "C": 0
+  },
+  "lines_attempted": 2,
+  "first_try_pass": 2,
+  "first_try_pass_rate": 1.0,
+  "final_pass": 2,
+  "dropped": 0,
+  "llm_calls": 8,
+  "cost_usd_total": 0.0441,
+  "cost_usd_by_model": {
+    "claude-haiku-5-5": 0.0134,
+    "claude-sonnet-5-5": 0.0307
+  },
+  "cost_usd_per_account": 0.0221,
+  "cost_usd_per_approved_line": 0.0221,
+  "avg_seconds_per_account": 6.75,
+  "wall_seconds": 6.9,
+  "workers": 4
+}

@@ -1,0 +1,262 @@
+{
+  "prompt": "CHECK_SYS in gtm_brain/lines.py (tightened 2026-10-24)",
+  "real_lines": 30,
+  "padded_caught": "6 of 6",
+  "faithful_wrongly_failed": "10 of 24",
+  "synthetic_cases": 24,
+  "synthetic_false_pass": 0,
+  "synthetic_false_fail": 4,
+  "rows": [
+    {
+      "domain": "allbirds.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "brooklinen.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "started"
+      ]
+    },
+    {
+      "domain": "outdoorvoices.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "ritual.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "\"says it\" (attribution not present in snippet)",
+        "\"for its supplements\" (product qualifier not present in snippet)"
+      ]
+    },
+    {
+      "domain": "nativecos.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "aimed at",
+        "Native"
+      ]
+    },
+    {
+      "domain": "harrys.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "\"Harry's says\" (attribution not in snippet)",
+        "\"its founders\" (snippet says Jeff and Andy, not that they are founders)",
+        "\"believed\" (snippet says \"thought\"; plain synonym, acceptable)"
+      ]
+    },
+    {
+      "domain": "glossier.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "for makeup"
+      ]
+    },
+    {
+      "domain": "mvmt.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "parachutehome.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "Parachute Home says"
+      ]
+    },
+    {
+      "domain": "buffy.co",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "bedding"
+      ]
+    },
+    {
+      "domain": "grovemade.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "peakdesign.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "ridge.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "the old stuff-everything-in wallet",
+        "Ridge says"
+      ]
+    },
+    {
+      "domain": "chubbies.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "taylorstitch.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "vuoriclothing.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "jennikayne.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "brooklynbedding.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "tuftandneedle.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "\"its own\" (snippet says \"our own\"; the company name is the subject, so this is a plain synonym and acceptable)",
+        "\"refining it\" (snippet says \"iterating\"; a synonym, acceptable)"
+      ]
+    },
+    {
+      "domain": "casper.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "thursdayboots.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "Thursday Boot Company says it started Thursday",
+        "tradeoffs",
+        "its own"
+      ]
+    },
+    {
+      "domain": "cotopaxi.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "Snippet says \"nonprofits with proven track records of reducing poverty\"; line says \"nonprofits that reduce poverty\", dropping the qualifier 'with proven track records' but not adding a new descriptor. The line states nonprofits reduce poverty as a present fact, while the snippet qualifies this as proven track record, which is a weaker claim than the line implies."
+      ]
+    },
+    {
+      "domain": "kotn.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "tentree.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "pact.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "PACT"
+      ]
+    },
+    {
+      "domain": "girlfriend.com",
+      "label": "adds_words",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "activewear fabrics",
+        "makes its"
+      ]
+    },
+    {
+      "domain": "brumate.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "\"says it was\" is a reporting qualifier not in the snippet, which states the founding directly"
+      ]
+    },
+    {
+      "domain": "ugmonk.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "according to the banner at the top of its site"
+      ]
+    },
+    {
+      "domain": "pelacase.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "pass",
+      "unsupported": []
+    },
+    {
+      "domain": "nomadgoods.com",
+      "label": "faithful",
+      "old": "pass",
+      "new": "fail",
+      "unsupported": [
+        "Nomad says (snippet says \"Our\", not attributed to a named company; the attribution is an added claim)"
+      ]
+    }
+  ]
+}

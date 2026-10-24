@@ -1,0 +1,17 @@
+$ gtm-brain export --out runs/2026-10-24-live   (before any approval)
+BLOCKED: no approved rows in approvals.csv, export blocked
+exit=2
+
+$ PreToolUse hook on the same Bash command (payload as Claude Code sends it)
+BLOCKED: no approved rows in runs/2026-10-24-live/approvals.csv. Ask the human to review first_lines.csv, then run /gtm-approve.
+hook exit=2
+
+$ gtm-brain approve --all-passed   (DEMO ONLY: auto-approval by the builder, not a real human review)
+{"approved_rows": 17}
+
+$ hook again
+hook exit=0
+
+$ gtm-brain export
+{"exported": 17, "approved": 17, "skipped_no_line": 0, "dir": "runs/2026-10-24-live/export"}
+exit=0

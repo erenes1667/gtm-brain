@@ -1,0 +1,232 @@
+{
+  "summary": {
+    "mode": "dry-run",
+    "created": 0,
+    "updated": 0,
+    "errors": 0,
+    "rows": 17
+  },
+  "payloads": [
+    {
+      "domain": "allbirds.com",
+      "properties": {
+        "name": "Allbirds",
+        "domain": "allbirds.com",
+        "description": "Allbirds sells comfortable, sustainably made shoes and apparel using natural materials like Merino wool, tree fiber, and sugarcane.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "96",
+        "gtm_first_line": "Allbirds works with natural and recycled materials like responsibly-sourced Merino wool, tree fiber, and sugarcane, and describes this as working with Mother Nature.",
+        "gtm_evidence": "We work with\u2014not against\u2014Mother Nature, favoring both recycled and natural materials like responsibly-sourced Merino wool, tree fiber, and sugarcane."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "brooklinen.com",
+      "properties": {
+        "name": "Brooklinen",
+        "domain": "brooklinen.com",
+        "description": "Brooklinen is a Brooklyn-founded DTC seller of premium sheets, bedding, pillows, and towels, with sitewide sales and free shipping over $100.",
+        "gtm_icp_tier": "B",
+        "gtm_icp_score": "63",
+        "gtm_first_line": "Brooklinen started in Brooklyn in 2014, selling premium, hotel-quality sheets and towels at accessible prices straight to customers.",
+        "gtm_evidence": "Founded in Brooklyn in 2014, we disrupted the bedding industry with premium, hotel-quality sheets and towels at accessible prices, direct to your door."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "buffy.co",
+      "properties": {
+        "name": "Buffy",
+        "domain": "buffy.co",
+        "description": "A DTC bedding brand selling eucalyptus, linen, and cotton sheets, duvet covers, pillows, comforters, and blankets.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "96",
+        "gtm_first_line": "Buffy offers 100% long-staple Supima Cotton bedding that is exclusively grown in America.",
+        "gtm_evidence": "Experience remarkable softness and durability with 100% long-staple Supima Cotton, exclusively grown in America."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "chubbies.com",
+      "properties": {
+        "name": "Chubbies",
+        "domain": "chubbies.com",
+        "description": "Chubbies sells men's shorts, swim trunks, and casual apparel built for the weekend, backed by a mental-health-focused foundation.",
+        "gtm_icp_tier": "B",
+        "gtm_icp_score": "66",
+        "gtm_first_line": "Chubbies exists to bring its community back to the moment and deliver that Friday at 5pm feeling every day of the week.",
+        "gtm_evidence": "we exist to bring our community back to the moment and deliver that Friday at 5pm feeling every day of the week."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "glossier.com",
+      "properties": {
+        "name": "Glossier",
+        "domain": "glossier.com",
+        "description": "Glossier is a direct-to-consumer beauty brand selling makeup, skincare, fragrance, and body care with free-shipping and gift promotions.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "96",
+        "gtm_first_line": "Glossier prioritizes skincare because it believes healthy skin is the best foundation for makeup.",
+        "gtm_evidence": "We prioritize skincare because we believe that healthy skin is the best foundation."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "grovemade.com",
+      "properties": {
+        "name": "Grovemade",
+        "domain": "grovemade.com",
+        "description": "Grovemade sells walnut, maple, and oak desk furniture and accessories for home workspaces, with its headquarters in Portland, Oregon.",
+        "gtm_icp_tier": "B",
+        "gtm_icp_score": "57",
+        "gtm_first_line": "Grovemade believes the physical environment matters in the pursuit of meaningful work and should feel calm, mindful and peaceful.",
+        "gtm_evidence": "We believe that the physical environment matters in the pursuit of meaningful work. It should be calm, mindful and peaceful"
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "harrys.com",
+      "properties": {
+        "name": "Harrys",
+        "domain": "harrys.com",
+        "description": "Harry's sells shaving, skincare, body, hair, and cologne products, positioned as high-performance grooming at a fair price.",
+        "gtm_icp_tier": "B",
+        "gtm_icp_score": "54",
+        "gtm_first_line": "Harry's says its founders Jeff and Andy believed men deserved a great shave without overpaying.",
+        "gtm_evidence": "Jeff and Andy thought men deserved a great shave without overpaying."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "jennikayne.com",
+      "properties": {
+        "name": "Jennikayne",
+        "domain": "jennikayne.com",
+        "description": "Jenni Kayne is a California-inspired lifestyle brand selling apparel, shoes, accessories, furniture, decor, and Oak Essentials skincare.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "93",
+        "gtm_first_line": "Jenni Kayne is a lifestyle brand born from a California sensibility, known for enduring classics that transcend trends.",
+        "gtm_evidence": "Jenni Kayne is a lifestyle brand born from a California sensibility, known for our enduring classics that transcend trends and become heirlooms throughout time."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "mvmt.com",
+      "properties": {
+        "name": "Mvmt",
+        "domain": "mvmt.com",
+        "description": "MVMT is a direct-to-consumer brand selling watches, sunglasses, and jewelry, with a current sitewide buy-one-get-one 50% off promotion.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "71",
+        "gtm_first_line": "MVMT has been bringing the unexpected to timekeeping since 2013.",
+        "gtm_evidence": "Dreamed in California Bringing the unexpected to timekeeping since 2013"
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "nativecos.com",
+      "properties": {
+        "name": "Nativecos",
+        "domain": "nativecos.com",
+        "description": "Native sells clean, aluminum-free deodorants and body, hair, and skin care products across many scent families, with bundles and seasonal limited editions.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "81",
+        "gtm_first_line": "Native makes clean products with no aluminum, dyes, sulfates, silicones, phthalates or petrolatum, aimed at hair and body care people can feel confident about.",
+        "gtm_evidence": "We make clean products with no aluminum, dyes, sulfates, silicones, phthalates, petrolatum, and more. It\u2019s hair and body care you can feel confident about."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "outdoorvoices.com",
+      "properties": {
+        "name": "Outdoorvoices",
+        "domain": "outdoorvoices.com",
+        "description": "Outdoor Voices sells technical recreation activewear for men and women, emphasizing movement, outdoor activities, and free shipping over $100.",
+        "gtm_icp_tier": "B",
+        "gtm_icp_score": "63",
+        "gtm_first_line": "Outdoor Voices makes technical apparel for recreation, designed as the uniform for doing things.",
+        "gtm_evidence": "At Outdoor Voices, we make Technical Apparel for Recreation, designing the uniform for Doing Things with materials made for movement."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "parachutehome.com",
+      "properties": {
+        "name": "Parachutehome",
+        "domain": "parachutehome.com",
+        "description": "Parachute Home sells bedding, bath linens, and decor, designed in Los Angeles and made by partner craftspeople, with a free-shipping and 60-day returns policy.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "96",
+        "gtm_first_line": "Parachute Home says its cult-favorite linens are designed in Los Angeles and made with love by craftspeople around the world.",
+        "gtm_evidence": "Our cult-favorite linens are designed in Los Angeles and made with love by craftspeople around the world."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "peakdesign.com",
+      "properties": {
+        "name": "Peakdesign",
+        "domain": "peakdesign.com",
+        "description": "Peak Design sells bags, camera gear, phone cases, tripods, and wallets, with a Fair Trade focus and no outside investors.",
+        "gtm_icp_tier": "B",
+        "gtm_icp_score": "50",
+        "gtm_first_line": "Peak Design says all of its bags are Fair Trade certified.",
+        "gtm_evidence": "All of our bags are Fair Trade certified."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "ridge.com",
+      "properties": {
+        "name": "Ridge",
+        "domain": "ridge.com",
+        "description": "Ridge sells wallets, rings, tech, luggage and drinkware, backed by lifetime warranty and a 99-day risk-free trial.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "79",
+        "gtm_first_line": "Ridge says its minimalist first approach to design turned the old stuff-everything-in wallet on its head, so people can carry less.",
+        "gtm_evidence": "We turned that on its head with our minimalist first approach to design. So you can carry less and live more."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "ritual.com",
+      "properties": {
+        "name": "Ritual",
+        "domain": "ritual.com",
+        "description": "Ritual is a DTC women's health supplement brand emphasizing traceable sourcing, clinical studies, and science-backed formulas for pregnancy through perimenopause.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "79",
+        "gtm_first_line": "Ritual says it has spent a decade building traceable supply chains and clinical proof for its supplements.",
+        "gtm_evidence": "That\u2019s why Ritual has spent a decade building traceable supply chains and clinical proof."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "taylorstitch.com",
+      "properties": {
+        "name": "Taylorstitch",
+        "domain": "taylorstitch.com",
+        "description": "Taylor Stitch sells men's classic clothing, emphasizing durable shirting, responsible fabrics, and long-lasting construction.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "94",
+        "gtm_first_line": "Taylor Stitch says it has always been a shirting company at its core and always will be.",
+        "gtm_evidence": "We\u2019ve always considered ourselves a shirting company at our very core. Always have. Always will."
+      },
+      "action": "upsert_by_domain"
+    },
+    {
+      "domain": "vuoriclothing.com",
+      "properties": {
+        "name": "Vuoriclothing",
+        "domain": "vuoriclothing.com",
+        "description": "Vuori sells performance activewear and gifts for men and women, with new arrivals and collections priced from $98 to $218.",
+        "gtm_icp_tier": "A",
+        "gtm_icp_score": "86",
+        "gtm_first_line": "Vuori makes premium performance apparel inspired by the active Coastal California lifestyle, blending fitness, surf, sport, and art.",
+        "gtm_evidence": "Vuori makes premium performance apparel inspired by the active Coastal California lifestyle; an integration of fitness, surf, sport, and art."
+      },
+      "action": "upsert_by_domain"
+    }
+  ]
+}

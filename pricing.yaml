@@ -1,0 +1,5 @@
+# USD per million tokens. ASSUMED list rates, edit to match your console price page.
+# Cost figures in this repo are token counts multiplied by these rates.
+claude-haiku-5-5: {input: 1.0, output: 5.0}
+claude-sonnet-5-5: {input: 3.0, output: 15.0}
+claude-opus-5-5: {input: 5.0, output: 25.0}

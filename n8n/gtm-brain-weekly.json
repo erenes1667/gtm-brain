@@ -1,0 +1,205 @@
+{
+  "name": "gtm-brain weekly research run (executed once via manual trigger, schedule trigger not run)",
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Every Monday 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 7 * * 1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "name": "Run now (manual)",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        160
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Run gtm-brain CLI",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        260,
+        0
+      ],
+      "parameters": {
+        "command": "=cd /opt/gtm-brain && GTM_ENV_FILE=/opt/gtm-brain/.env uv run gtm-brain run domains.csv --out runs/{{ $now.toFormat('yyyy-LL-dd') }}"
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "id": "3",
+      "name": "Read metrics",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        520,
+        0
+      ],
+      "parameters": {
+        "command": "=cat /opt/gtm-brain/runs/{{ $now.toFormat('yyyy-LL-dd') }}/metrics.json"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Parse metrics",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        780,
+        0
+      ],
+      "parameters": {
+        "jsCode": "const m = JSON.parse($input.first().json.stdout);\nreturn [{json: {text: `gtm-brain run ready for review: ${m.final_pass} lines, cost $${m.cost_usd_total}. Approve with /gtm-approve. Nothing was exported or sent.`}}];"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Notify reviewer (draft only)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "6",
+      "name": "On any error",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        260
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "7",
+      "name": "Format failure",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        260,
+        260
+      ],
+      "parameters": {
+        "jsCode": "const e = $input.first().json;\nreturn [{json: {text: `gtm-brain weekly run failed at ${e.execution?.lastNodeExecuted}: ${e.execution?.error?.message}. Nothing was exported or sent.`}}];"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Notify failure (draft only)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        520,
+        260
+      ],
+      "parameters": {}
+    }
+  ],
+  "connections": {
+    "Every Monday 07:00": {
+      "main": [
+        [
+          {
+            "node": "Run gtm-brain CLI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run gtm-brain CLI": {
+      "main": [
+        [
+          {
+            "node": "Read metrics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read metrics": {
+      "main": [
+        [
+          {
+            "node": "Parse metrics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse metrics": {
+      "main": [
+        [
+          {
+            "node": "Notify reviewer (draft only)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "On any error": {
+      "main": [
+        [
+          {
+            "node": "Format failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format failure": {
+      "main": [
+        [
+          {
+            "node": "Notify failure (draft only)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Run now (manual)": {
+      "main": [
+        [
+          {
+            "node": "Run gtm-brain CLI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

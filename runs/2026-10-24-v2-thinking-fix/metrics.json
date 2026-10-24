@@ -1,0 +1,31 @@
+{
+  "accounts": 25,
+  "fetched_ok": 19,
+  "fetch_errors": {
+    "bombas.com": "http_429",
+    "huckberry.com": "http_403",
+    "fabletics.com": "http_403",
+    "rhone.com": "http_403",
+    "ourplace.com": "blocked_by_robots",
+    "mizzenandmain.com": "http_429"
+  },
+  "tiers": {
+    "A": 11,
+    "B": 7,
+    "C": 7
+  },
+  "lines_attempted": 18,
+  "first_try_pass": 0,
+  "first_try_pass_rate": 0.0,
+  "final_pass": 7,
+  "dropped": 11,
+  "llm_calls": 110,
+  "cost_usd_total": 0.6827,
+  "cost_usd_by_model": {
+    "claude-haiku-5-5": 0.1394,
+    "claude-sonnet-5-5": 0.5433
+  },
+  "cost_usd_per_account": 0.0273,
+  "cost_usd_per_approved_line": 0.0975,
+  "avg_seconds_per_account": 6.68
+}

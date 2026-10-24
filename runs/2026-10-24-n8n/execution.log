@@ -1,0 +1,183 @@
+Registered runner "JS Task Runner" (QLnDm59VvkKRwtARZaUAm) 
+Execution was successful:
+====================================
+{
+  "data": {
+    "version": 1,
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Every Monday 07:00": [
+          {
+            "startTime": 1792808448855,
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": 1,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Run gtm-brain CLI": [
+          {
+            "startTime": 1792808448857,
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Every Monday 07:00",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 7750,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "exitCode": 0,
+                      "stderr": "Building gtm-brain @ file://<repo>\n      Built gtm-brain @ file://<repo>\nUninstalled 1 package in 0.81ms\nInstalled 1 package in 1ms",
+                      "stdout": "{\n  \"accounts\": 2,\n  \"fetched_ok\": 2,\n  \"fetch_errors\": {},\n  \"tiers\": {\n    \"A\": 2,\n    \"B\": 0,\n    \"C\": 0\n  },\n  \"lines_attempted\": 2,\n  \"first_try_pass\": 2,\n  \"first_try_pass_rate\": 1.0,\n  \"final_pass\": 2,\n  \"dropped\": 0,\n  \"llm_calls\": 8,\n  \"cost_usd_total\": 0.0441,\n  \"cost_usd_by_model\": {\n    \"claude-haiku-5-5\": 0.0134,\n    \"claude-sonnet-5-5\": 0.0307\n  },\n  \"cost_usd_per_account\": 0.0221,\n  \"cost_usd_per_approved_line\": 0.0221,\n  \"avg_seconds_per_account\": 6.75,\n  \"wall_seconds\": 6.9,\n  \"workers\": 4\n}"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read metrics": [
+          {
+            "startTime": 1792808456607,
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Run gtm-brain CLI",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 21,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "exitCode": 0,
+                      "stderr": "",
+                      "stdout": "{\n  \"accounts\": 2,\n  \"fetched_ok\": 2,\n  \"fetch_errors\": {},\n  \"tiers\": {\n    \"A\": 2,\n    \"B\": 0,\n    \"C\": 0\n  },\n  \"lines_attempted\": 2,\n  \"first_try_pass\": 2,\n  \"first_try_pass_rate\": 1.0,\n  \"final_pass\": 2,\n  \"dropped\": 0,\n  \"llm_calls\": 8,\n  \"cost_usd_total\": 0.0441,\n  \"cost_usd_by_model\": {\n    \"claude-haiku-5-5\": 0.0134,\n    \"claude-sonnet-5-5\": 0.0307\n  },\n  \"cost_usd_per_account\": 0.0221,\n  \"cost_usd_per_approved_line\": 0.0221,\n  \"avg_seconds_per_account\": 6.75,\n  \"wall_seconds\": 6.9,\n  \"workers\": 4\n}"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Parse metrics": [
+          {
+            "startTime": 1792808456628,
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Read metrics",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 33,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "gtm-brain run ready for review: 2 lines, cost $0.0441. Approve with /gtm-approve. Nothing was exported or sent."
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Notify reviewer (draft only)": [
+          {
+            "startTime": 1792808456661,
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Parse metrics",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 1,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "gtm-brain run ready for review: 2 lines, cost $0.0441. Approve with /gtm-approve. Nothing was exported or sent."
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Notify reviewer (draft only)"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {},
+      "runtimeData": {
+        "version": 1,
+        "establishedAt": 1792808448853,
+        "source": "cli",
+        "triggerNode": {
+          "name": "Every Monday 07:00",
+          "type": "n8n-nodes-base.scheduleTrigger"
+        }
+      }
+    },
+    "resumeToken": "781bb87e6eda5159383bef1a4eb04dbe302099914cf20f560f314aea99721ff2"
+  },
+  "mode": "cli",
+  "startedAt": "2026-10-24T02:20:48.851Z",
+  "stoppedAt": "2026-10-24T02:20:56.662Z",
+  "storedAt": "db",
+  "status": "success",
+  "finished": true
+}
